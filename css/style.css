@@ -49,13 +49,14 @@ body{
     color: whitesmoke;
 }
 
-@media only screen and (max-width: 600px) {
-    .header-section, .subheader{
-        position: static;
-    }
 
-    
-  }
+  .rect-cards{
+    margin: 10px 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-auto-rows: minmax(100px,auto);
+    grid-auto-columns: minmax(300px,auto);
+}
 
 .rect{
     width: 280px;
@@ -97,6 +98,12 @@ body{
     background-color: snow;
     width: 150px;
     height: 50px;
+}
+
+#last-card{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    transform: translateX(calc(50%));
 }
 .main-content {
 	padding-top: 100px;
@@ -284,4 +291,19 @@ body{
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    .header-section, .subheader{
+        position: static;
+    }
+    .rect-cards{
+        grid-template-columns: 300px;
+    }
+    #last-card{
+        grid-column-start: 1;
+    grid-column-end: 2;
+    transform: translateX(0%);
+    }
   }
