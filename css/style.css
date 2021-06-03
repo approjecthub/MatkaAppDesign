@@ -9,8 +9,12 @@ body{
     width: 100%;
     margin: 0;
     padding: 0;
-    background: linear-gradient(rgba(243, 156, 41, 0.5), rgba(247, 207, 75, 0.452));
-    position:relative;
+    background: linear-gradient(rgba(153, 243, 233, 0.5), rgba(198, 223, 241, 0.452));
+    transition: width 2s, height 4s;
+    /* background-image: url('https://pbs.twimg.com/media/DdJwi_zWAAAdcKc.jpg'); */
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    position:relative; */
 }
 .header-section img{
     margin: 0;
