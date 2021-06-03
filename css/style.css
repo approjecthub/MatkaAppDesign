@@ -56,3 +56,45 @@ body{
 
     
   }
+
+.card{
+    width: 280px;
+    position: relative;
+    height: 130px;
+    margin-top: 50px;
+    background-color: rgb(238, 224, 224) !important;
+}
+.card-no, .card-logo{
+    position: absolute;
+}
+
+.card-no{
+    width: 30px;
+    height: 30px;
+    background-color: teal;
+    border-radius: 50%;
+    color: whitesmoke;
+    transform: translate(-25%,-55%);
+    text-align: center;
+}
+.card-title{
+    margin: 0 !important;
+    margin-left: 20px !important;
+    margin-top: 40px !important;
+}
+.card-body{
+    margin: 0;
+    padding: 0 !important;
+    margin-left: 20px ;
+    margin-top: 10px;
+}
+.card-logo{
+    transform: translate(80%,-65%);
+    background-color: snow;
+    
+}
+.card-logo img{
+    background-color: snow;
+    width: 150px;
+    height: 50px;
+}
