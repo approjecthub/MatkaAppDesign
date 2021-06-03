@@ -57,18 +57,18 @@ body{
     
   }
 
-.card{
+.rect{
     width: 280px;
     position: relative;
     height: 130px;
     margin-top: 50px;
     background-color: rgb(238, 224, 224) !important;
 }
-.card-no, .card-logo{
+.rect-no, .rect-logo{
     position: absolute;
 }
 
-.card-no{
+.rect-no{
     width: 30px;
     height: 30px;
     background-color: teal;
@@ -77,23 +77,23 @@ body{
     transform: translate(-25%,-55%);
     text-align: center;
 }
-.card-title{
+.rect-title{
     margin: 0 !important;
     margin-left: 20px !important;
     margin-top: 40px !important;
 }
-.card-body{
+.rect-body{
     margin: 0;
     padding: 0 !important;
     margin-left: 20px ;
     margin-top: 10px;
 }
-.card-logo{
+.rect-logo{
     transform: translate(80%,-65%);
     background-color: snow;
     
 }
-.card-logo img{
+.rect-logo img{
     background-color: snow;
     width: 150px;
     height: 50px;
@@ -243,3 +243,45 @@ body{
 .carousel-indicators .active {
     background: #fff;
 }
+
+/* .footer-img{
+    padding-left: 10px;
+    width: 30vw;
+} */
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
